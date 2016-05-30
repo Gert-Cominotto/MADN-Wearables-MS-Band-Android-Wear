@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flowpilots.Wearables.Pages.MsBand.MsBandStep2">
+
+  <StackLayout Orientation="Vertical" >
+    <Button x:Name="GetConsentButton"
+            Text="Get Consent"
+            HorizontalOptions="Fill"
+            Clicked="GetConsentButton_Click" />
+
+    <Frame OutlineColor="Black">
+      <StackLayout Orientation="Vertical">
+        <Label Text="UserConsent:" />
+        <Label Text="{Binding UserConsent, Mode=OneWay}" />
+      </StackLayout>
+    </Frame>
+
+    <Button x:Name="StartHeartRateSensor"
+            Text="Start Heart Rate Sensor"
+            HorizontalOptions="Fill"
+            Clicked="StartHeartRateSensor_Click" />
+
+    <Frame OutlineColor="Black">
+      <StackLayout Orientation="Vertical">
+        <Label Text="Heart Rate:" />
+        <Label Text="{Binding BandHeartRateReading.HeartRate, Mode=OneWay}" />
+        <Label Text="Quality:" />
+        <Label Text="{Binding BandHeartRateReading.Quality, Mode=OneWay}" />
+      </StackLayout>
+    </Frame>
+
+  </StackLayout>
+</ContentPage>

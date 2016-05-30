@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+  <LinearLayout
+    android:orientation="vertical"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout1" />
+  <Button
+    android:text="Send Local Notification"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnSendLocalNotification" />
+  <Button
+    android:text="Send Notification to Both"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnSendNotificationToBoth" />
+  <Button
+    android:text="Send Notification with extra Intent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnSendNotificationWithExtraIntent" />
+  <Button
+    android:text="Send Notification with extra Action"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnSendNotificationWithExtraAction" />
+  <Button
+    android:text="Send Notification with Wearable-only Action"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnSendNotificationWithWearableOnlyaAction" />
+  <Button
+    android:text="Send Notification with Big Text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnSendNotificationWithBigText" />
+  <Button
+    android:text="Send Notification with Inbox Style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnSendNotificationWithInboxStyle" />
+  <Button
+    android:text="Send Notification with Voice Input Action"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnSendNotificationWithVoiceInput" />
+  <Button
+    android:text="Send Notification with Multiple Pages"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnSendNotificationWithMultiplePages" />
+</LinearLayout>

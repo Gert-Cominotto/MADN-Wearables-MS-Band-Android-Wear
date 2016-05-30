@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:pages="clr-namespace:Flowpilots.Wearables.Pages;assembly=Flowpilots.Wearables"
+            x:Class="Flowpilots.Wearables.Pages.MainPage">
+
+  <NavigationPage Title="Android Wear" >
+    <x:Arguments>
+      <pages:AndroidWearPage Title="Android Wear"/>
+    </x:Arguments>
+  </NavigationPage>
+  <NavigationPage Title="Microsoft Band" >
+    <x:Arguments>
+      <pages:MsBandPage Title="Microsoft Band" />
+    </x:Arguments>
+  </NavigationPage>
+  <NavigationPage  Title="Apple Watch">
+    <x:Arguments>
+      <pages:AppleWatchPage Title="Apple Watch" />
+    </x:Arguments>
+  </NavigationPage>
+
+</TabbedPage>

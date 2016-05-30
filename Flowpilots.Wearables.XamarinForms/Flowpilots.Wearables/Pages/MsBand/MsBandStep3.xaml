@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flowpilots.Wearables.Pages.MsBand.MsBandStep3">
+
+  <StackLayout>
+    <Button x:Name="StartHeartRateSensor"
+            Text="Start Accelerometer Sensor"
+            Clicked="StartAccelerometerSensor_Click" />
+
+    <Frame OutlineColor="Black">
+      <StackLayout Orientation="Vertical">
+        <Label Text="X:" />
+        <Label Text="{Binding BandAccelerometerReading.AccelerationX, Mode=OneWay}" />
+        <Label Text="Y:" />
+        <Label Text="{Binding BandAccelerometerReading.AccelerationY, Mode=OneWay}" />
+        <Label Text="Z:" />
+        <Label Text="{Binding BandAccelerometerReading.AccelerationZ, Mode=OneWay}" />
+      </StackLayout>
+    </Frame>
+  </StackLayout>
+
+</ContentPage>

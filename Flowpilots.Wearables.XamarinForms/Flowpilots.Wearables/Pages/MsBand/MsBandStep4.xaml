@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flowpilots.Wearables.Pages.MsBand.MsBandStep4">
+
+  <StackLayout>
+    <Button x:Name="GetListOfApplicationTilesButton"
+            Text="Retrieve the list of MY application's tiles that are already on the Band"
+            Clicked="GetListOfApplicationTilesButton_Click" />
+
+    <Frame OutlineColor="Black">
+      <ListView x:Name="Tiles"
+                ItemsSource="{Binding BandTiles}"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                HeightRequest="100">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <Grid>
+                <Label Text="{Binding Name}" />
+              </Grid>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </Frame>
+
+
+    <Button Margin="0,24,0,0"
+            x:Name="CheckIfThereIsSpaceForMoreTilesOnTheBandButton"
+            Text="Determine if there is space for more tiles on the Band."
+            Clicked="CheckIfThereIsSpaceForMoreTilesOnTheBandButton_Click" />
+
+    <Button Margin="0,24,0,0"
+            x:Name="CreateTileButton"
+            Text="Create Tile"
+            Clicked="CreateTileButton_Click" />
+
+
+    <Button Margin="0,24,0,0"
+            x:Name="RemoveAllTilesButton"
+            Text="Remove all my Tiles"
+            Clicked="RemoveAllTilesButton_Click" />
+
+
+    <Button Margin="0,24,0,0"
+            x:Name="SendNotificationButton"
+            Text="Send Notification to all Tiles"
+            Clicked="SendNotificationButton_Click" />
+
+
+    <Button Margin="0,24,0,0"
+            x:Name="SendMessageButton"
+            Text="Send Message to all Tiles"
+            Clicked="SendMessageButton_Click" />
+
+
+    <Button Margin="0,24,0,0"
+            x:Name="SendMessageWithoutDialogButton"
+            Text="Send Message to all Tiles Without Dialog"
+            Clicked="SendMessageWithoutDialogButton_Click" />
+  </StackLayout>
+</ContentPage>

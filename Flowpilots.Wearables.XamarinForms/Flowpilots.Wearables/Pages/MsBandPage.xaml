@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flowpilots.Wearables.Pages.MsBandPage">
+  <ContentPage.Content>
+    <StackLayout>
+      <Button Text="Step 1 - Connect the Band"
+              Clicked="Step1_OnClicked"
+              VerticalOptions="StartAndExpand" />
+      <Button Text="Step 2 - Heart Rate"
+              Clicked="Step2_OnClicked"
+              VerticalOptions="StartAndExpand" />
+      <Button Text="Step 3 - Accelerometer"
+              Clicked="Step3_OnClicked"
+              VerticalOptions="StartAndExpand" />
+      <Button Text="Step 4 - Tiles"
+              Clicked="Step4_OnClicked"
+              VerticalOptions="StartAndExpand" />
+      <Button Text="Step 5 - Custom Pages"
+              Clicked="Step5_OnClicked"
+              VerticalOptions="StartAndExpand" />
+      <Button Text="Step 6 - Background Tasks"
+              Clicked="Step6_OnClicked"
+              VerticalOptions="StartAndExpand" />
+      <Button Text="Step 7 - Custom Tile Events"
+              Clicked="Step7_OnClicked"
+              VerticalOptions="StartAndExpand" />
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

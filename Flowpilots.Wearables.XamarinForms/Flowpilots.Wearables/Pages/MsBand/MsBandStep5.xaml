@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flowpilots.Wearables.Pages.MsBand.MsBandStep5">
+
+  <StackLayout>
+    <Button x:Name="CreateLayout1"
+            Text="Create Layout 1"
+            Clicked="CreateLayout1Button_Click" />
+
+    <Button Margin="0,24,0,0"
+            x:Name="CreateLayout2"
+            Text="Create Layout 2"
+            Clicked="CreateLayout2Button_Click" />
+  </StackLayout>
+</ContentPage>

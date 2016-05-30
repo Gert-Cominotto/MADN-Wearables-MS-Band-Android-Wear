@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flowpilots.Wearables.Pages.MsBand.MsBandStep7">
+
+  <StackLayout>
+    <Button x:Name="CreateLayout1"
+            Text="Create Tile with Button"
+            Clicked="CreateTileWithButton_Click" />
+
+    <Button Margin="0,24,0,0"
+            x:Name="StartListeningToEvents"
+            Text="Start listening to events"
+            Clicked="StartListeningToEventsButton_Click" />
+  </StackLayout>
+</ContentPage>

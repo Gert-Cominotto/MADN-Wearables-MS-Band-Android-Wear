@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flowpilots.Wearables.Pages.MsBand.MsBandStep1">
+
+  <StackLayout Orientation="Vertical" >
+
+    <Button x:Name="GetListOfPairedBandButton"
+            Text="Get List Of Paired Bands"
+            HorizontalOptions="FillAndExpand"
+            Clicked="GetListOfPairedBandButton_Click" />
+
+    <Frame OutlineColor="Black">
+      <ListView x:Name="BandDeviceInfosList"
+                ItemsSource="{Binding BandDeviceInfos}"
+                SelectedItem="{Binding SelectedBandDeviceInfo, Mode=TwoWay}"
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                HeightRequest="100">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <Grid>
+                <Label Text="{Binding Name}" />
+              </Grid>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </Frame>
+
+    <Button Margin="0,24,0,0"
+            x:Name="ConnectToSelectedBandButton"
+            Text="Connect to the selected band"
+            HorizontalOptions="Fill"
+            Clicked="ConnectToSelectedBandButton_Click" />
+
+
+    <Frame OutlineColor="Black">
+      <StackLayout Orientation="Vertical">
+        <Label Text="{Binding IsConnected, Mode=OneWay}"/>
+        <Label Text="{Binding FirmwareVersion, Mode=OneWay}"/>
+        <Label Text="{Binding HardwareVersion, Mode=OneWay}"/>
+      </StackLayout>
+    </Frame>
+
+
+    <Button Grid.Row="4"
+            Margin="0,24,0,0"
+            x:Name="DisconnectButton"
+            Text="Disconnect"
+            HorizontalOptions="Fill"
+            Clicked="DisconnectButton_Click" />
+
+  </StackLayout>
+</ContentPage>

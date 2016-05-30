@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flowpilots.Wearables.Pages.AndroidWearPage"
+             Icon="today.png"
+             Title="Android Wear">
+  <ContentPage.Content>
+    <StackLayout>
+      <Button Text="Step 1 - Notifications"
+              Clicked="Step1_OnClicked"
+              VerticalOptions="StartAndExpand" />
+      
+      <Button Text="Step 2 - Connect to the Android Wear"
+              Clicked="Step2_OnClicked"
+              VerticalOptions="StartAndExpand" />
+      
+      <Button Text="Step 3 - Launch Android Wear App"
+              Clicked="Step3_OnClicked"
+              VerticalOptions="StartAndExpand" />
+      
+      <!--<Button Text="Step X - Connect the Android Wear"
+              Clicked="StepX_OnClicked"
+              VerticalOptions="StartAndExpand" />-->
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
